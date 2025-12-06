@@ -1,0 +1,134 @@
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #607D8B; 
+    
+}
+
+/* Colores personalizados para Bootstrap */
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.login-container {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../img/logo.png') no-repeat center center/cover;
+}
+
+.logo-section {
+    padding: 20px;
+}
+
+.logo-section img {
+    max-width: 300px;
+    height: auto;
+}
+
+.auth-forms-container-custom {
+    max-width: 500px; 
+    width: 100%;
+}
+
+.auth-form-wrapper-custom.hidden {
+    display: none;
+}
+
+.auth-toggle-text-custom a {
+    text-decoration: none;
+}
+
+.auth-toggle-text-custom a:hover {
+    text-decoration: underline;
+}
+
+.auth-message-custom {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.auth-message-custom.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.auth-message-custom.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* Estilos base para botones (si no los tienes ya en style.css) */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
+/* Estilos específicos para el botón de iniciar sesión/registrarse */
+.btn-login {
+    background-color: #007bff; /* Un color azul para el botón */
+    color: white;
+    border: 2px solid #007bff; /* Borde del mismo color */
+    margin-left: 20px; /* Espacio para separar del menú de navegación */
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    border-color: #0056b3;
+    color: white; /* Asegura que el texto siga siendo blanco */
+}
+
+
+.header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+@media (max-width: 991.98px) { 
+    .logo-section {
+        margin-top: 30px; 
+    }
+    .logo-section h1 {
+        font-size: 2.5em; 
+    }
+    .logo-section p {
+        font-size: 1.1em;
+    }
+    .auth-forms-container-custom {
+        margin-bottom: 30px; 
+    }
+}
+
+@media (max-width: 575.98px) {
+    .auth-forms-container-custom {
+        padding: 25px; 
+    }
+    .logo-section img {
+        max-width: 200px; 
+    }
+}
